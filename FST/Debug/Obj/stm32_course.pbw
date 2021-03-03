@@ -89940,7 +89940,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@1469@F@show_digit@s",
+    "ID": "c:main.c@1470@F@show_digit@s",
     "What": "Variable",
     "defdec": "Def",
     "display": "s",
@@ -89968,7 +89968,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@2355@F@show_number@res",
+    "ID": "c:main.c@2356@F@show_number@res",
     "What": "Variable",
     "defdec": "Def",
     "display": "res",
@@ -89982,7 +89982,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@2578@F@show_number@i",
+    "ID": "c:main.c@2579@F@show_number@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
@@ -90002,7 +90002,7 @@
     "display": "int main(void)",
     "location": {
       "column": "5",
-      "line": "95",
+      "line": "97",
       "path": "D:\\!WORK\\STM\\FST\\main.c"
     },
     "name": "main",
@@ -90010,13 +90010,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@2697@F@main@counter",
+    "ID": "c:main.c@2716@F@main@counter",
     "What": "Variable",
     "defdec": "Def",
     "display": "counter",
     "location": {
       "column": "12",
-      "line": "98",
+      "line": "100",
       "path": "D:\\!WORK\\STM\\FST\\main.c"
     },
     "name": "counter",
@@ -90024,13 +90024,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@2697@F@main@is_pressed",
+    "ID": "c:main.c@2716@F@main@is_pressed",
     "What": "Variable",
     "defdec": "Dec",
     "display": "is_pressed",
     "location": {
       "column": "25",
-      "line": "98",
+      "line": "100",
       "path": "D:\\!WORK\\STM\\FST\\main.c"
     },
     "name": "is_pressed",
@@ -90038,16 +90038,30 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@2697@F@main@is_on",
+    "ID": "c:main.c@2716@F@main@is_on",
     "What": "Variable",
     "defdec": "Dec",
     "display": "is_on",
     "location": {
       "column": "41",
-      "line": "98",
+      "line": "100",
       "path": "D:\\!WORK\\STM\\FST\\main.c"
     },
     "name": "is_on",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@2768@F@main@n",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "n",
+    "location": {
+      "column": "12",
+      "line": "101",
+      "path": "D:\\!WORK\\STM\\FST\\main.c"
+    },
+    "name": "n",
     "origin": "project_file",
     "scope": null
   },

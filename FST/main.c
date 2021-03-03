@@ -10,7 +10,7 @@ void delay( void )
 
 void delay10( void )
 {
-  for (int i = 0; i < 6000; i++);
+  for (int i = 0; i < 60000; i++);
 }
 
 void gpio_config( void )
@@ -89,13 +89,16 @@ void show_number( uint32_t num )
   
   static int i = 0;
   
-  LL_GPIO_WriteOutputPort(GPIOB, res[i++ % 4]);
+  LL_GPIO_WriteOutputPort(GPIOB, res[i]);
+  
+  i = (i + 1) % 4;
 }
 
 int main( void )
 { 
   gpio_config();
   uint32_t counter = 0, is_pressed = 0, is_on = 0;
+  uint32_t n = 0;
   
   while (1)
   {
@@ -128,11 +131,12 @@ int main( void )
       // change state
       is_on = 1 - is_on;
     
+      ++n;
+      delay10();
       
       is_pressed = 0;
       counter = 0;
     }
-    
-    show_number(1234);
+    show_number(n);
   }
 }
