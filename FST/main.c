@@ -131,14 +131,15 @@ void show_hell( uint32_t cnt )
   }
   
   uint16_t pos_mask = pos[i];
-  
-  if (string[(sym_pos + 1) % size] == '.')
+  /* skip dot symbol if it is next */
+  /* but not skip if the pre dot symbol on the right edge panel */
+  if (string[(sym_pos + 1) % size] == '.' && i != 3)
   {
     i = (i + 1) % 4;
     dot_flag = 0x0004;
   }
-  uint8_t sym = string[sym_pos];
-  LL_GPIO_WriteOutputPort(GPIOB, get_hell_sym(sym) | dot_flag | pos_mask );
+  
+  LL_GPIO_WriteOutputPort(GPIOB, get_hell_sym(string[sym_pos]) | dot_flag | pos_mask);
   
   dot_flag = 0;
   
@@ -235,7 +236,7 @@ int main( void )
 #ifdef CLICKER
     show_number(n);
 #else
-    for (int i = 0; i < 4000; ++i)
+    for (int i = 0; i < 10000; ++i)
       show_hell(n);
     n++;
     
