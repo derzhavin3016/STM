@@ -33,7 +33,6 @@ void gpio_config( void )
   LL_GPIO_SetPinMode(GPIOB, LL_GPIO_PIN_7, LL_GPIO_MODE_OUTPUT);
   LL_GPIO_SetPinMode(GPIOB, LL_GPIO_PIN_8, LL_GPIO_MODE_OUTPUT);
   LL_GPIO_SetPinMode(GPIOB, LL_GPIO_PIN_9, LL_GPIO_MODE_OUTPUT);
-  /* 10 */
   LL_GPIO_SetPinMode(GPIOB, LL_GPIO_PIN_10, LL_GPIO_MODE_OUTPUT);
   LL_GPIO_SetPinMode(GPIOB, LL_GPIO_PIN_11, LL_GPIO_MODE_OUTPUT);
 }
@@ -77,6 +76,75 @@ uint16_t show_digit( uint32_t digit )
   }
 }
 
+/* HELLO PEOPLE. */
+uint16_t get_hell_sym( uint8_t sym )
+{
+  uint16_t s[] = {
+  0x0400, // segment A - 0
+  0x0040, // segment B - 1
+  0x0008, // segment C - 2
+  0x0002, // segment D - 3
+  0x0001, // segment E - 4
+  0x0200, // segment F - 5
+  0x0010, // segment G - 6
+  };
+  
+  switch (sym)
+  {
+  case 'H':
+    return s[1] | s[2] | s[4] | s[5] | s[6];
+  case 'E':
+    return s[0] | s[5] | s[6] | s[4] | s[3];
+  case 'L':
+    return s[3] | s[4] | s[5];
+  case 'O':
+    return s[0] | s[1] | s[2] | s[3] | s[4] | s[5];
+  case 'P':
+    return s[0] | s[1] | s[4] | s[5] | s[6];
+  case '.':
+    return 0x0004;
+  case ' ':
+    return 0x0000;
+  }
+  return 0;
+}
+
+void show_hell( uint32_t cnt )
+{
+  uint8_t string[] = "HELLO PEOPLE.";
+  uint16_t size = sizeof(string) / sizeof(char) - 1;
+  uint16_t pos[] = {
+    0x01A0, 0x08A0, 0x0920, 0x0980
+  };
+  
+  static int i = 0;
+  uint16_t dot_flag = 0;
+  
+  uint8_t sym_pos = (cnt + i) % size;
+  
+  /* Check if the first symbol is a dot */
+  if (string[sym_pos] == '.' && i == 0)
+  {
+    cnt = (cnt + 1) % size;
+    sym_pos = (cnt + i) % size;
+    i = (i + 1) % 4;
+  }
+  
+  uint16_t pos_mask = pos[i];
+  
+  if (string[(sym_pos + 1) % size] == '.')
+  {
+    i = (i + 1) % 4;
+    dot_flag = 0x0004;
+  }
+  uint8_t sym = string[sym_pos];
+  LL_GPIO_WriteOutputPort(GPIOB, get_hell_sym(sym) | dot_flag | pos_mask );
+  
+  dot_flag = 0;
+  
+  i = (i + 1) % 4;
+}
+
 void show_number( uint32_t num )
 {
   uint16_t res[4] = 
@@ -95,6 +163,8 @@ void show_number( uint32_t num )
 }
 
 #define NO_NOISE
+
+//#define CLICKER
 
 int main( void )
 { 
@@ -134,7 +204,7 @@ int main( void )
       // change state
       is_on = 1 - is_on;
     
-      LL_GPIO_WriteOutputPort(GPIOB, 0x0000);
+      //LL_GPIO_WriteOutputPort(GPIOB, 0x0000);
       ++n;
       
       is_pressed = 0;
@@ -155,11 +225,20 @@ int main( void )
         }
         // change state
         is_on = 1 - is_on;
-    
+#ifdef CLICKER
+        LL_GPIO_WriteOutputPort(GPIOB, 0x0000);
         ++n;
+#endif
      }
 #endif
-    show_number(n);
     
+#ifdef CLICKER
+    show_number(n);
+#else
+    for (int i = 0; i < 4000; ++i)
+      show_hell(n);
+    n++;
+    
+#endif
   }
 }
