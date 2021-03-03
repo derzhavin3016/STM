@@ -103,6 +103,16 @@ uint16_t get_hell_sym( uint8_t sym )
     return s[0] | s[1] | s[4] | s[5] | s[6];
   case '.':
     return 0x0004;
+  case 'A':
+    return s[0] | s[1] | s[2] | s[6] | s[4] | s[5];      
+  case 'U':
+    return s[2] | s[3] | s[4] | s[1] | s[5];
+  case 'C':
+    return s[0] | s[3] | s[4] | s[5];
+  case 'S':
+    return s[0] | s[6] | s[2] | s[6] | s[5] | s[3];  
+  case 'I':
+    return s[4] | s[5];
   case ' ':
     return 0x0000;
   }
@@ -111,7 +121,7 @@ uint16_t get_hell_sym( uint8_t sym )
 
 void show_hell( uint32_t cnt )
 {
-  uint8_t string[] = "HELLO PEOPLE.";
+  uint8_t string[] = "HELP US PLEASE.";
   uint16_t size = sizeof(string) / sizeof(char) - 1;
   uint16_t pos[] = {
     0x01A0, 0x08A0, 0x0920, 0x0980
