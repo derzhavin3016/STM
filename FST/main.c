@@ -20,7 +20,76 @@ void gpio_config( void )
   
   LL_GPIO_SetPinMode(GPIOC, LL_GPIO_PIN_9, LL_GPIO_MODE_OUTPUT);
   LL_GPIO_SetPinMode(GPIOC, LL_GPIO_PIN_8, LL_GPIO_MODE_OUTPUT);
-  LL_GPIO_SetPinMode(GPIOC, LL_GPIO_PIN_0, LL_GPIO_MODE_INPUT);
+  
+  // GPIOB init
+  LL_AHB1_GRP1_EnableClock(LL_AHB1_GRP1_PERIPH_GPIOB);
+  LL_GPIO_SetPinMode(GPIOB, LL_GPIO_PIN_0, LL_GPIO_MODE_OUTPUT);
+  LL_GPIO_SetPinMode(GPIOB, LL_GPIO_PIN_1, LL_GPIO_MODE_OUTPUT);
+  LL_GPIO_SetPinMode(GPIOB, LL_GPIO_PIN_2, LL_GPIO_MODE_OUTPUT);
+  LL_GPIO_SetPinMode(GPIOB, LL_GPIO_PIN_3, LL_GPIO_MODE_OUTPUT);
+  LL_GPIO_SetPinMode(GPIOB, LL_GPIO_PIN_4, LL_GPIO_MODE_OUTPUT);
+  LL_GPIO_SetPinMode(GPIOB, LL_GPIO_PIN_5, LL_GPIO_MODE_OUTPUT);
+  LL_GPIO_SetPinMode(GPIOB, LL_GPIO_PIN_6, LL_GPIO_MODE_OUTPUT);
+  LL_GPIO_SetPinMode(GPIOB, LL_GPIO_PIN_7, LL_GPIO_MODE_OUTPUT);
+  LL_GPIO_SetPinMode(GPIOB, LL_GPIO_PIN_8, LL_GPIO_MODE_OUTPUT);
+  LL_GPIO_SetPinMode(GPIOB, LL_GPIO_PIN_9, LL_GPIO_MODE_OUTPUT);
+  /* 10 */
+  LL_GPIO_SetPinMode(GPIOB, LL_GPIO_PIN_10, LL_GPIO_MODE_OUTPUT);
+  LL_GPIO_SetPinMode(GPIOB, LL_GPIO_PIN_11, LL_GPIO_MODE_OUTPUT);
+}
+
+uint16_t show_digit( uint32_t digit )
+{
+  uint16_t s[] = {
+  0x0400, // segment A - 0
+  0x0040, // segment B - 1
+  0x0008, // segment C - 2
+  0x0002, // segment D - 3
+  0x0001, // segment E - 4
+  0x0200, // segment F - 5
+  0x0010, // segment G - 6
+  };
+  
+  switch (digit)
+  {
+  case 0:
+    return s[0] | s[1] | s[2] | s[3] | s[4] | s[5];
+  case 1:
+    return s[1] | s[2];
+  case 2:
+    return s[0] | s[1] | s[6] | s[4] | s[3];
+  case 3:
+    return s[0] | s[1] | s[2] | s[3] | s[6];
+  case 4:
+    return s[1] | s[2] | s[5] | s[6];
+  case 5:
+    return s[0] | s[2] | s[3] | s[5] | s[6];
+  case 6:
+    return s[0] | s[2] | s[3] | s[4] | s[5] | s[6];
+  case 7:
+    return s[0] | s[1] | s[2];
+  case 8:
+    return s[0] | s[1] | s[2] | s[3] | s[4] | s[5] | s[6];
+  case 9:
+    return s[0] | s[1] | s[2] | s[3] | s[5] | s[6];
+  default:
+    return 0;
+  }
+}
+
+void show_number( uint32_t num )
+{
+  uint16_t res[4] = 
+  {
+    [0] = show_digit(num % 10) | 0x0980,
+    [1] = show_digit(num / 10 % 10) | 0x0920,
+    [2] = show_digit(num / 100 % 10) | 0x08A0,
+    [3] = show_digit(num / 1000 % 10) | 0x01A0,
+  };
+  
+  static int i = 0;
+  
+  LL_GPIO_WriteOutputPort(GPIOB, res[i++ % 4]);
 }
 
 int main( void )
@@ -58,10 +127,12 @@ int main( void )
       }
       // change state
       is_on = 1 - is_on;
+    
       
       is_pressed = 0;
       counter = 0;
     }
+    
+    show_number(1234);
   }
-  return 0;
 }
