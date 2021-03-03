@@ -89654,7 +89654,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@3057@F@show_hell@size",
+    "ID": "c:main.c@3066@F@show_hell@size",
     "What": "Variable",
     "defdec": "Def",
     "display": "size",
@@ -89668,7 +89668,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@3111@F@show_hell@pos",
+    "ID": "c:main.c@3120@F@show_hell@pos",
     "What": "Variable",
     "defdec": "Def",
     "display": "pos",
@@ -89682,7 +89682,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@3179@F@show_hell@i",
+    "ID": "c:main.c@3188@F@show_hell@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
@@ -89696,7 +89696,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@3200@F@show_hell@dot_flag",
+    "ID": "c:main.c@3209@F@show_hell@dot_flag",
     "What": "Variable",
     "defdec": "Def",
     "display": "dot_flag",
@@ -89710,7 +89710,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@3230@F@show_hell@sym_pos",
+    "ID": "c:main.c@3239@F@show_hell@sym_pos",
     "What": "Variable",
     "defdec": "Def",
     "display": "sym_pos",
@@ -89724,7 +89724,7 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@3456@F@show_hell@pos_mask",
+    "ID": "c:main.c@3465@F@show_hell@pos_mask",
     "What": "Variable",
     "defdec": "Def",
     "display": "pos_mask",
@@ -89744,7 +89744,7 @@
     "display": "void show_number(uint32_t)",
     "location": {
       "column": "6",
-      "line": "149",
+      "line": "150",
       "path": "D:\\!WORK\\STM\\FST\\main.c"
     },
     "name": "show_number",
@@ -89752,13 +89752,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@3883@F@show_number@res",
+    "ID": "c:main.c@3901@F@show_number@res",
     "What": "Variable",
     "defdec": "Def",
     "display": "res",
     "location": {
       "column": "12",
-      "line": "151",
+      "line": "152",
       "path": "D:\\!WORK\\STM\\FST\\main.c"
     },
     "name": "res",
@@ -89766,13 +89766,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@4106@F@show_number@i",
+    "ID": "c:main.c@4124@F@show_number@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "14",
-      "line": "159",
+      "line": "160",
       "path": "D:\\!WORK\\STM\\FST\\main.c"
     },
     "name": "i",
@@ -89780,13 +89780,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@4209@macro@NO_NOISE",
+    "ID": "c:main.c@4227@macro@NO_NOISE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "NO_NOISE",
     "location": {
       "column": "9",
-      "line": "166",
+      "line": "167",
       "path": "D:\\!WORK\\STM\\FST\\main.c"
     },
     "name": "NO_NOISE",
@@ -89800,7 +89800,7 @@
     "display": "int main(void)",
     "location": {
       "column": "5",
-      "line": "170",
+      "line": "171",
       "path": "D:\\!WORK\\STM\\FST\\main.c"
     },
     "name": "main",
@@ -89808,13 +89808,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@4284@F@main@counter",
+    "ID": "c:main.c@4302@F@main@counter",
     "What": "Variable",
     "defdec": "Def",
     "display": "counter",
     "location": {
       "column": "12",
-      "line": "173",
+      "line": "174",
       "path": "D:\\!WORK\\STM\\FST\\main.c"
     },
     "name": "counter",
@@ -89822,13 +89822,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@4284@F@main@is_pressed",
+    "ID": "c:main.c@4302@F@main@is_pressed",
     "What": "Variable",
     "defdec": "Dec",
     "display": "is_pressed",
     "location": {
       "column": "25",
-      "line": "173",
+      "line": "174",
       "path": "D:\\!WORK\\STM\\FST\\main.c"
     },
     "name": "is_pressed",
@@ -89836,13 +89836,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@4284@F@main@is_on",
+    "ID": "c:main.c@4302@F@main@is_on",
     "What": "Variable",
     "defdec": "Dec",
     "display": "is_on",
     "location": {
       "column": "41",
-      "line": "173",
+      "line": "174",
       "path": "D:\\!WORK\\STM\\FST\\main.c"
     },
     "name": "is_on",
@@ -89850,13 +89850,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@4336@F@main@n",
+    "ID": "c:main.c@4354@F@main@n",
     "What": "Variable",
     "defdec": "Def",
     "display": "n",
     "location": {
       "column": "12",
-      "line": "174",
+      "line": "175",
       "path": "D:\\!WORK\\STM\\FST\\main.c"
     },
     "name": "n",
@@ -89864,13 +89864,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@5738@F@main@i",
+    "ID": "c:main.c@5756@F@main@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "14",
-      "line": "239",
+      "line": "240",
       "path": "D:\\!WORK\\STM\\FST\\main.c"
     },
     "name": "i",

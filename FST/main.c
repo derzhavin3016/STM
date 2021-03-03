@@ -133,9 +133,10 @@ void show_hell( uint32_t cnt )
   uint16_t pos_mask = pos[i];
   /* skip dot symbol if it is next */
   /* but not skip if the pre dot symbol on the right edge panel */
-  if (string[(sym_pos + 1) % size] == '.' && i != 3)
+  if (string[(sym_pos + 1) % size] == '.')
   {
-    i = (i + 1) % 4;
+    if (i != 3)
+      i = (i + 1) % 4;
     dot_flag = 0x0004;
   }
   
@@ -236,7 +237,7 @@ int main( void )
 #ifdef CLICKER
     show_number(n);
 #else
-    for (int i = 0; i < 10000; ++i)
+    for (int i = 0; i < 20000; ++i)
       show_hell(n);
     n++;
     
