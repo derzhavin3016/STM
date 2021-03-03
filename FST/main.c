@@ -10,7 +10,7 @@ void delay( void )
 
 void delay10( void )
 {
-  for (int i = 0; i < 60000; i++);
+  for (int i = 0; i < 6000; i++);
 }
 
 void gpio_config( void )
@@ -94,6 +94,8 @@ void show_number( uint32_t num )
   i = (i + 1) % 4;
 }
 
+#define NO_NOISE
+
 int main( void )
 { 
   gpio_config();
@@ -102,6 +104,7 @@ int main( void )
   
   while (1)
   {
+#ifdef NO_NOISE
     // 1 - on, 0 - off
     /* Check if button pressed */
     if (LL_GPIO_IsInputPinSet(GPIOA, LL_GPIO_PIN_0))
@@ -131,12 +134,32 @@ int main( void )
       // change state
       is_on = 1 - is_on;
     
+      LL_GPIO_WriteOutputPort(GPIOB, 0x0000);
       ++n;
-      delay10();
       
       is_pressed = 0;
       counter = 0;
     }
+#else
+     if (LL_GPIO_IsInputPinSet(GPIOA, LL_GPIO_PIN_0)) 
+     {
+       if (is_on)
+        {
+          LL_GPIO_ResetOutputPin(GPIOC, LL_GPIO_PIN_9);
+          LL_GPIO_SetOutputPin(GPIOC, LL_GPIO_PIN_8);
+        }
+        else
+        {
+          LL_GPIO_SetOutputPin(GPIOC, LL_GPIO_PIN_9);
+          LL_GPIO_ResetOutputPin(GPIOC, LL_GPIO_PIN_8);
+        }
+        // change state
+        is_on = 1 - is_on;
+    
+        ++n;
+     }
+#endif
     show_number(n);
+    
   }
 }

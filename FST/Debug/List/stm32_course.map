@@ -1,12 +1,12 @@
 ###############################################################################
 #
-# IAR ELF Linker V8.30.1.114/W32 for ARM                  03/Mar/2021  21:37:32
+# IAR ELF Linker V8.30.1.114/W32 for ARM                  03/Mar/2021  22:52:28
 # Copyright 2007-2018 IAR Systems AB.
 #
 #    Output file  =  D:\!WORK\STM\FST\Debug\Exe\stm32_course.out
 #    Map file     =  D:\!WORK\STM\FST\Debug\List\stm32_course.map
 #    Command line =  
-#        -f C:\Users\derzh\AppData\Local\Temp\EW4496.tmp
+#        -f C:\Users\derzh\AppData\Local\Temp\EWDE37.tmp
 #        (D:\!WORK\STM\FST\Debug\Obj\main.o --no_out_extension -o
 #        D:\!WORK\STM\FST\Debug\Exe\stm32_course.out --redirect
 #        _Printf=_PrintfFullNoMb --redirect _Scanf=_ScanfFullNoMb --map
@@ -53,24 +53,24 @@ define block HEAP with size = 2K, alignment = 8 { };
   .intvec          ro code   0x800'0000   0x40  vector_table_M.o [3]
                            - 0x800'0040   0x40
 
-"P1":                                    0x560
-  .text            ro code   0x800'0040  0x36c  main.o [1]
-  .text            ro code   0x800'03ac   0x34  ABImemcpy.o [3]
-  .text            ro code   0x800'03e0   0xe0  I32DivModFast.o [3]
-  .text            ro code   0x800'04c0    0x2  IntDivZer.o [3]
-  .text            ro code   0x800'04c2   0x3c  zero_init3.o [3]
-  .text            ro code   0x800'04fe    0x2  vector_table_M.o [3]
-  .text            ro code   0x800'0500   0x28  data_init.o [3]
-  .iar.init_table  const     0x800'0528   0x10  - Linker created -
-  .text            ro code   0x800'0538   0x1e  cmain.o [3]
-  .text            ro code   0x800'0556    0x4  low_level_init.o [2]
-  .text            ro code   0x800'055a    0x8  exit.o [2]
-  .text            ro code   0x800'0564    0xa  cexit.o [3]
-  .text            ro code   0x800'0570   0x14  exit.o [4]
-  .rodata          const     0x800'0584   0x10  main.o [1]
-  .text            ro code   0x800'0594    0xc  cstartup_M.o [3]
-  .rodata          const     0x800'05a0    0x0  zero_init3.o [3]
-                           - 0x800'05a0  0x560
+"P1":                                    0x564
+  .text            ro code   0x800'0040  0x370  main.o [1]
+  .text            ro code   0x800'03b0   0x34  ABImemcpy.o [3]
+  .text            ro code   0x800'03e4   0xe0  I32DivModFast.o [3]
+  .text            ro code   0x800'04c4    0x2  IntDivZer.o [3]
+  .text            ro code   0x800'04c6   0x3c  zero_init3.o [3]
+  .text            ro code   0x800'0502    0x2  vector_table_M.o [3]
+  .text            ro code   0x800'0504   0x28  data_init.o [3]
+  .iar.init_table  const     0x800'052c   0x10  - Linker created -
+  .text            ro code   0x800'053c   0x1e  cmain.o [3]
+  .text            ro code   0x800'055a    0x4  low_level_init.o [2]
+  .text            ro code   0x800'055e    0x8  exit.o [2]
+  .text            ro code   0x800'0568    0xa  cexit.o [3]
+  .text            ro code   0x800'0574   0x14  exit.o [4]
+  .rodata          const     0x800'0588   0x10  main.o [1]
+  .text            ro code   0x800'0598    0xc  cstartup_M.o [3]
+  .rodata          const     0x800'05a4    0x0  zero_init3.o [3]
+                           - 0x800'05a4  0x564
 
 "P2", part 1 of 2:                         0x4
   .bss             zero     0x2000'0000    0x4  main.o [1]
@@ -85,7 +85,7 @@ Unused ranges:
 
          From           To    Size
          ----           --    ----
-   0x800'05a0   0x800'ffff  0xfa60
+   0x800'05a4   0x800'ffff  0xfa5c
   0x2000'0004  0x2000'0007     0x4
   0x2000'0808  0x2000'1fff  0x17f8
 
@@ -113,9 +113,9 @@ command line/config:
     Total:
 
 D:\!WORK\STM\FST\Debug\Obj: [1]
-    main.o                876       16        4
+    main.o                880       16        4
     -------------------------------------------
-    Total:                876       16        4
+    Total:                880       16        4
 
 dl6M_tln.a: [2]
     exit.o                  8
@@ -144,7 +144,7 @@ shb_l.a: [4]
     Gaps                    4
     Linker created                  16    2 048
 -----------------------------------------------
-    Grand Total:        1 408       32    2 052
+    Grand Total:        1 412       32    2 052
 
 
 *******************************************************************************
@@ -153,9 +153,9 @@ shb_l.a: [4]
 
 Entry                       Address   Size  Type      Object
 -----                       -------   ----  ----      ------
-.iar.init_table$$Base    0x800'0528          --   Gb  - Linker created -
-.iar.init_table$$Limit   0x800'0538          --   Gb  - Linker created -
-?main                    0x800'0539         Code  Gb  cmain.o [3]
+.iar.init_table$$Base    0x800'052c          --   Gb  - Linker created -
+.iar.init_table$$Limit   0x800'053c          --   Gb  - Linker created -
+?main                    0x800'053d         Code  Gb  cmain.o [3]
 CSTACK$$Base            0x2000'0008          --   Gb  - Linker created -
 CSTACK$$Limit           0x2000'0808          --   Gb  - Linker created -
 LL_AHB1_GRP1_EnableClock
@@ -166,32 +166,32 @@ LL_GPIO_SetOutputPin     0x800'008b    0x4  Code  Lc  main.o [1]
 LL_GPIO_SetPinMode       0x800'0057   0x1c  Code  Lc  main.o [1]
 LL_GPIO_WriteOutputPort
                          0x800'0087    0x4  Code  Lc  main.o [1]
-Region$$Table$$Base      0x800'0528          --   Gb  - Linker created -
-Region$$Table$$Limit     0x800'0538          --   Gb  - Linker created -
+Region$$Table$$Base      0x800'052c          --   Gb  - Linker created -
+Region$$Table$$Limit     0x800'053c          --   Gb  - Linker created -
 __ICFEDIT_region_RAM_end__ {Abs}
                         0x2000'1fff         Data  Gb  <internal module>
 __ICFEDIT_region_RAM_start__ {Abs}
                         0x2000'0000         Data  Gb  <internal module>
-__aeabi_idiv             0x800'040d         Code  Gb  I32DivModFast.o [3]
-__aeabi_idiv0            0x800'04c1         Code  Gb  IntDivZer.o [3]
-__aeabi_idivmod          0x800'040d         Code  Gb  I32DivModFast.o [3]
-__aeabi_memcpy4          0x800'03ad         Code  Wk  ABImemcpy.o [3]
-__aeabi_uidiv            0x800'0413         Code  Gb  I32DivModFast.o [3]
-__aeabi_uidivmod         0x800'0413         Code  Gb  I32DivModFast.o [3]
-__cmain                  0x800'0539         Code  Gb  cmain.o [3]
-__exit                   0x800'0571   0x14  Code  Gb  exit.o [4]
-__iar_data_init3         0x800'0501   0x28  Code  Gb  data_init.o [3]
-__iar_program_start      0x800'0595         Code  Gb  cstartup_M.o [3]
-__iar_zero_init3         0x800'04c3   0x3c  Code  Gb  zero_init3.o [3]
-__low_level_init         0x800'0557    0x4  Code  Gb  low_level_init.o [2]
+__aeabi_idiv             0x800'0411         Code  Gb  I32DivModFast.o [3]
+__aeabi_idiv0            0x800'04c5         Code  Gb  IntDivZer.o [3]
+__aeabi_idivmod          0x800'0411         Code  Gb  I32DivModFast.o [3]
+__aeabi_memcpy4          0x800'03b1         Code  Wk  ABImemcpy.o [3]
+__aeabi_uidiv            0x800'0417         Code  Gb  I32DivModFast.o [3]
+__aeabi_uidivmod         0x800'0417         Code  Gb  I32DivModFast.o [3]
+__cmain                  0x800'053d         Code  Gb  cmain.o [3]
+__exit                   0x800'0575   0x14  Code  Gb  exit.o [4]
+__iar_data_init3         0x800'0505   0x28  Code  Gb  data_init.o [3]
+__iar_program_start      0x800'0599         Code  Gb  cstartup_M.o [3]
+__iar_zero_init3         0x800'04c7   0x3c  Code  Gb  zero_init3.o [3]
+__low_level_init         0x800'055b    0x4  Code  Gb  low_level_init.o [2]
 __vector_table           0x800'0000         Data  Gb  vector_table_M.o [3]
-_call_main               0x800'0545         Code  Gb  cmain.o [3]
-_exit                    0x800'0565         Code  Gb  cexit.o [3]
-_main                    0x800'0553         Code  Gb  cmain.o [3]
+_call_main               0x800'0549         Code  Gb  cmain.o [3]
+_exit                    0x800'0569         Code  Gb  cexit.o [3]
+_main                    0x800'0557         Code  Gb  cmain.o [3]
 delay10                  0x800'0093   0x10  Code  Gb  main.o [1]
-exit                     0x800'055b    0x8  Code  Gb  exit.o [2]
+exit                     0x800'055f    0x8  Code  Gb  exit.o [2]
 gpio_config              0x800'00a3   0xb8  Code  Gb  main.o [1]
-main                     0x800'0315   0x82  Code  Gb  main.o [1]
+main                     0x800'0315   0x86  Code  Gb  main.o [1]
 show_digit               0x800'015b  0x122  Code  Gb  main.o [1]
 show_number              0x800'027d   0x92  Code  Gb  main.o [1]
 show_number::i          0x2000'0000    0x4  Data  Lc  main.o [1]
@@ -202,7 +202,7 @@ show_number::i          0x2000'0000    0x4  Data  Lc  main.o [1]
 [3] = rt6M_tl.a
 [4] = shb_l.a
 
-  1 408 bytes of readonly  code memory
+  1 412 bytes of readonly  code memory
      32 bytes of readonly  data memory
   2 052 bytes of readwrite data memory
 
