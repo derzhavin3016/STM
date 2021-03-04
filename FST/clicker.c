@@ -194,6 +194,8 @@ void no_noise_cl( void )
     is_pressed = 0;
     counter = 0;
   }
+  
+  show_number(n);
 }
 
 void noise_cl( void )

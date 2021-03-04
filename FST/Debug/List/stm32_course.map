@@ -1,12 +1,12 @@
 ###############################################################################
 #
-# IAR ELF Linker V8.30.1.114/W32 for ARM                  04/Mar/2021  20:06:23
+# IAR ELF Linker V8.30.1.114/W32 for ARM                  04/Mar/2021  20:08:53
 # Copyright 2007-2018 IAR Systems AB.
 #
 #    Output file  =  D:\!WORK\STM\FST\Debug\Exe\stm32_course.out
 #    Map file     =  D:\!WORK\STM\FST\Debug\List\stm32_course.map
 #    Command line =  
-#        -f C:\Users\derzh\AppData\Local\Temp\EW684B.tmp
+#        -f C:\Users\derzh\AppData\Local\Temp\EWB01D.tmp
 #        (D:\!WORK\STM\FST\Debug\Obj\clicker.o
 #        D:\!WORK\STM\FST\Debug\Obj\main.o --no_out_extension -o
 #        D:\!WORK\STM\FST\Debug\Exe\stm32_course.out --redirect
@@ -54,27 +54,32 @@ define block HEAP with size = 2K, alignment = 8 { };
   .intvec          ro code   0x800'0000   0x40  vector_table_M.o [3]
                            - 0x800'0040   0x40
 
-"P1":                                    0x23c
-  .text            ro code   0x800'0040  0x164  clicker.o [1]
-  .text            ro code   0x800'01a4   0x3c  zero_init3.o [3]
-  .text            ro code   0x800'01e0   0x28  data_init.o [3]
-  .iar.init_table  const     0x800'0208   0x10  - Linker created -
-  .text            ro code   0x800'0218   0x1e  cmain.o [3]
-  .text            ro code   0x800'0236    0x4  low_level_init.o [2]
-  .text            ro code   0x800'023a    0xc  main.o [1]
-  .text            ro code   0x800'0246    0x8  exit.o [2]
-  .text            ro code   0x800'024e    0x2  vector_table_M.o [3]
-  .text            ro code   0x800'0250    0xa  cexit.o [3]
-  .text            ro code   0x800'025c   0x14  exit.o [4]
-  .text            ro code   0x800'0270    0xc  cstartup_M.o [3]
-  .rodata          const     0x800'027c    0x0  zero_init3.o [3]
-                           - 0x800'027c  0x23c
+"P1":                                    0x52c
+  .text            ro code   0x800'0040  0x32c  clicker.o [1]
+  .text            ro code   0x800'036c   0x34  ABImemcpy.o [3]
+  .text            ro code   0x800'03a0   0xe0  I32DivModFast.o [3]
+  .text            ro code   0x800'0480    0x2  IntDivZer.o [3]
+  .text            ro code   0x800'0482   0x3c  zero_init3.o [3]
+  .text            ro code   0x800'04be    0x2  vector_table_M.o [3]
+  .text            ro code   0x800'04c0   0x28  data_init.o [3]
+  .iar.init_table  const     0x800'04e8   0x10  - Linker created -
+  .text            ro code   0x800'04f8   0x1e  cmain.o [3]
+  .text            ro code   0x800'0516    0x4  low_level_init.o [2]
+  .text            ro code   0x800'051a    0xc  main.o [1]
+  .text            ro code   0x800'0526    0x8  exit.o [2]
+  .text            ro code   0x800'0530    0xa  cexit.o [3]
+  .text            ro code   0x800'053c   0x14  exit.o [4]
+  .rodata          const     0x800'0550   0x10  clicker.o [1]
+  .text            ro code   0x800'0560    0xc  cstartup_M.o [3]
+  .rodata          const     0x800'056c    0x0  zero_init3.o [3]
+                           - 0x800'056c  0x52c
 
-"P2", part 1 of 2:                         0xc
+"P2", part 1 of 2:                        0x10
   .bss             zero     0x2000'0000    0x4  clicker.o [1]
   .bss             zero     0x2000'0004    0x4  clicker.o [1]
   .bss             zero     0x2000'0008    0x4  clicker.o [1]
-                          - 0x2000'000c    0xc
+  .bss             zero     0x2000'000c    0x4  clicker.o [1]
+                          - 0x2000'0010   0x10
 
 "P2", part 2 of 2:                       0x800
   CSTACK                    0x2000'0010  0x800  <Block>
@@ -85,8 +90,7 @@ Unused ranges:
 
          From           To    Size
          ----           --    ----
-   0x800'027c   0x800'ffff  0xfd84
-  0x2000'000c  0x2000'000f     0x4
+   0x800'056c   0x800'ffff  0xfa94
   0x2000'0810  0x2000'1fff  0x17f0
 
 
@@ -97,8 +101,8 @@ Unused ranges:
           Address      Size
           -------      ----
 Zero (__iar_zero_init3)
-    1 destination range, total size 0xc:
-          0x2000'0000   0xc
+    1 destination range, total size 0x10:
+          0x2000'0000  0x10
 
 
 
@@ -113,10 +117,10 @@ command line/config:
     Total:
 
 D:\!WORK\STM\FST\Debug\Obj: [1]
-    clicker.o             356                12
+    clicker.o             812       16       16
     main.o                 12
     -------------------------------------------
-    Total:                368                12
+    Total:                824       16       16
 
 dl6M_tln.a: [2]
     exit.o                  8
@@ -125,6 +129,9 @@ dl6M_tln.a: [2]
     Total:                 12
 
 rt6M_tl.a: [3]
+    ABImemcpy.o            52
+    I32DivModFast.o       224
+    IntDivZer.o             2
     cexit.o                10
     cmain.o                30
     cstartup_M.o           12
@@ -132,61 +139,70 @@ rt6M_tl.a: [3]
     vector_table_M.o       66
     zero_init3.o           60
     -------------------------------------------
-    Total:                218
+    Total:                496
 
 shb_l.a: [4]
     exit.o                 20
     -------------------------------------------
     Total:                 20
 
-    Gaps                    2
+    Gaps                    4
     Linker created                  16    2 048
 -----------------------------------------------
-    Grand Total:          620       16    2 060
+    Grand Total:        1 356       32    2 064
 
 
 *******************************************************************************
 *** ENTRY LIST
 ***
 
-Entry                       Address  Size  Type      Object
------                       -------  ----  ----      ------
-.iar.init_table$$Base    0x800'0208         --   Gb  - Linker created -
-.iar.init_table$$Limit   0x800'0218         --   Gb  - Linker created -
-?main                    0x800'0219        Code  Gb  cmain.o [3]
-CSTACK$$Base            0x2000'0010         --   Gb  - Linker created -
-CSTACK$$Limit           0x2000'0810         --   Gb  - Linker created -
+Entry                       Address   Size  Type      Object
+-----                       -------   ----  ----      ------
+.iar.init_table$$Base    0x800'04e8          --   Gb  - Linker created -
+.iar.init_table$$Limit   0x800'04f8          --   Gb  - Linker created -
+?main                    0x800'04f9         Code  Gb  cmain.o [3]
+CSTACK$$Base            0x2000'0010          --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'0810          --   Gb  - Linker created -
 LL_AHB1_GRP1_EnableClock
-                         0x800'0041  0x16  Code  Lc  clicker.o [1]
-LL_GPIO_IsInputPinSet    0x800'0073  0x14  Code  Lc  clicker.o [1]
-LL_GPIO_SetPinMode       0x800'0057  0x1c  Code  Lc  clicker.o [1]
+                         0x800'0041   0x16  Code  Lc  clicker.o [1]
+LL_GPIO_IsInputPinSet    0x800'0073   0x14  Code  Lc  clicker.o [1]
+LL_GPIO_SetPinMode       0x800'0057   0x1c  Code  Lc  clicker.o [1]
 LL_GPIO_WriteOutputPort
-                         0x800'0087   0x4  Code  Lc  clicker.o [1]
-Region$$Table$$Base      0x800'0208         --   Gb  - Linker created -
-Region$$Table$$Limit     0x800'0218         --   Gb  - Linker created -
+                         0x800'0087    0x4  Code  Lc  clicker.o [1]
+Region$$Table$$Base      0x800'04e8          --   Gb  - Linker created -
+Region$$Table$$Limit     0x800'04f8          --   Gb  - Linker created -
 __ICFEDIT_region_RAM_end__ {Abs}
-                        0x2000'1fff        Data  Gb  <internal module>
+                        0x2000'1fff         Data  Gb  <internal module>
 __ICFEDIT_region_RAM_start__ {Abs}
-                        0x2000'0000        Data  Gb  <internal module>
-__cmain                  0x800'0219        Code  Gb  cmain.o [3]
-__exit                   0x800'025d  0x14  Code  Gb  exit.o [4]
-__iar_data_init3         0x800'01e1  0x28  Code  Gb  data_init.o [3]
-__iar_program_start      0x800'0271        Code  Gb  cstartup_M.o [3]
-__iar_zero_init3         0x800'01a5  0x3c  Code  Gb  zero_init3.o [3]
-__low_level_init         0x800'0237   0x4  Code  Gb  low_level_init.o [2]
-__vector_table           0x800'0000        Data  Gb  vector_table_M.o [3]
-_call_main               0x800'0225        Code  Gb  cmain.o [3]
-_exit                    0x800'0251        Code  Gb  cexit.o [3]
-_main                    0x800'0233        Code  Gb  cmain.o [3]
-delay10                  0x800'008b  0x10  Code  Gb  clicker.o [1]
-exit                     0x800'0247   0x8  Code  Gb  exit.o [2]
-gpio_config              0x800'009b  0x9e  Code  Gb  clicker.o [1]
-main                     0x800'023b   0xc  Code  Gb  main.o [1]
-no_noise_cl              0x800'0145  0x50  Code  Gb  clicker.o [1]
-no_noise_cl::counter    0x2000'0000   0x4  Data  Lc  clicker.o [1]
+                        0x2000'0000         Data  Gb  <internal module>
+__aeabi_idiv             0x800'03cd         Code  Gb  I32DivModFast.o [3]
+__aeabi_idiv0            0x800'0481         Code  Gb  IntDivZer.o [3]
+__aeabi_idivmod          0x800'03cd         Code  Gb  I32DivModFast.o [3]
+__aeabi_memcpy4          0x800'036d         Code  Wk  ABImemcpy.o [3]
+__aeabi_uidiv            0x800'03d3         Code  Gb  I32DivModFast.o [3]
+__aeabi_uidivmod         0x800'03d3         Code  Gb  I32DivModFast.o [3]
+__cmain                  0x800'04f9         Code  Gb  cmain.o [3]
+__exit                   0x800'053d   0x14  Code  Gb  exit.o [4]
+__iar_data_init3         0x800'04c1   0x28  Code  Gb  data_init.o [3]
+__iar_program_start      0x800'0561         Code  Gb  cstartup_M.o [3]
+__iar_zero_init3         0x800'0483   0x3c  Code  Gb  zero_init3.o [3]
+__low_level_init         0x800'0517    0x4  Code  Gb  low_level_init.o [2]
+__vector_table           0x800'0000         Data  Gb  vector_table_M.o [3]
+_call_main               0x800'0505         Code  Gb  cmain.o [3]
+_exit                    0x800'0531         Code  Gb  cexit.o [3]
+_main                    0x800'0513         Code  Gb  cmain.o [3]
+delay10                  0x800'008b   0x10  Code  Gb  clicker.o [1]
+exit                     0x800'0527    0x8  Code  Gb  exit.o [2]
+gpio_config              0x800'009b   0x9e  Code  Gb  clicker.o [1]
+main                     0x800'051b    0xc  Code  Gb  main.o [1]
+no_noise_cl              0x800'02ff   0x58  Code  Gb  clicker.o [1]
+no_noise_cl::counter    0x2000'0004    0x4  Data  Lc  clicker.o [1]
 no_noise_cl::is_pressed
-                        0x2000'0004   0x4  Data  Lc  clicker.o [1]
-no_noise_cl::n          0x2000'0008   0x4  Data  Lc  clicker.o [1]
+                        0x2000'0008    0x4  Data  Lc  clicker.o [1]
+no_noise_cl::n          0x2000'000c    0x4  Data  Lc  clicker.o [1]
+show_digit               0x800'0139  0x122  Code  Gb  clicker.o [1]
+show_number              0x800'026d   0x92  Code  Gb  clicker.o [1]
+show_number::i          0x2000'0000    0x4  Data  Lc  clicker.o [1]
 
 
 [1] = D:\!WORK\STM\FST\Debug\Obj
@@ -194,9 +210,9 @@ no_noise_cl::n          0x2000'0008   0x4  Data  Lc  clicker.o [1]
 [3] = rt6M_tl.a
 [4] = shb_l.a
 
-    620 bytes of readonly  code memory
-     16 bytes of readonly  data memory
-  2 060 bytes of readwrite data memory
+  1 356 bytes of readonly  code memory
+     32 bytes of readonly  data memory
+  2 064 bytes of readwrite data memory
 
 Errors: none
 Warnings: none
