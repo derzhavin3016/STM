@@ -2370,6 +2370,12 @@
         </settings>
     </configuration>
     <file>
+        <name>$PROJ_DIR$\clicker.c</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\clicker.h</name>
+    </file>
+    <file>
         <name>$PROJ_DIR$\main.c</name>
     </file>
 </project>

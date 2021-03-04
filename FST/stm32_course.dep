@@ -1,62 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
     <fileVersion>4</fileVersion>
-    <fileChecksum>907924181</fileChecksum>
+    <fileChecksum>3603220942</fileChecksum>
     <configuration>
         <name>Debug</name>
         <outputs>
-            <file>$PROJ_DIR$\Debug\Obj\stm32_course.pbd</file>
-            <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
             <file>$PROJ_DIR$\Libraries\core\system_stm32f0xx.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
-            <file>$PROJ_DIR$\Libraries\plib\stm32f0xx_ll_bus.h</file>
-            <file>$PROJ_DIR$\Debug\List\stm32_course.map</file>
-            <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
-            <file>$TOOLKIT_DIR$\lib\m6M_tl.a</file>
             <file>$TOOLKIT_DIR$\inc\c\cmsis_iar.h</file>
-            <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
-            <file>$PROJ_DIR$\Libraries\core\stm32f051x8.h</file>
-            <file>$TOOLKIT_DIR$\lib\dl6M_tln.a</file>
-            <file>$PROJ_DIR$\Libraries\plib\stm32f0xx_ll_rcc.h</file>
             <file>$TOOLKIT_DIR$\lib\rt6M_tl.a</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\iccarm_builtin.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
-            <file>$PROJ_DIR$\Debug\Exe\stm32_course.out</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
+            <file>$PROJ_DIR$\main.c</file>
+            <file>$PROJ_DIR$\Libraries\plib\stm32f0xx_ll_rcc.h</file>
+            <file>$PROJ_DIR$\Libraries\plib\stm32f0xx_ll_bus.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$PROJ_DIR$\Debug\List\stm32_course.map</file>
+            <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
             <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$TOOLKIT_DIR$\lib\m6M_tl.a</file>
             <file>$TOOLKIT_DIR$\config\linker\ST\stm32f051x8.icf</file>
             <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\stm32_course.pbd</file>
+            <file>$PROJ_DIR$\Libraries\core\stm32f051x8.h</file>
+            <file>$TOOLKIT_DIR$\lib\dl6M_tln.a</file>
+            <file>$TOOLKIT_DIR$\inc\c\iccarm_builtin.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$PROJ_DIR$\Debug\Exe\stm32_course.out</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
             <file>$PROJ_DIR$\Debug\Obj\main.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
             <file>$PROJ_DIR$\Libraries\plib\stm32f0xx_ll_system.h</file>
             <file>$PROJ_DIR$\Libraries\core\core_cm0.h</file>
             <file>$PROJ_DIR$\Libraries\core\stm32f0xx.h</file>
-            <file>$PROJ_DIR$\main.c</file>
             <file>$PROJ_DIR$\Libraries\plib\stm32f0xx_ll_gpio.h</file>
+            <file>$PROJ_DIR$\clicker.c</file>
+            <file>$PROJ_DIR$\clicker.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\clicker.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\clicker.pbi</file>
         </outputs>
         <file>
             <name>[ROOT_NODE]</name>
             <outputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 17 5</file>
+                    <file> 20 8</file>
                 </tool>
             </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\Debug\Exe\stm32_course.out</name>
-            <outputs>
-                <tool>
-                    <name>ILINK</name>
-                    <file> 5</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ILINK</name>
-                    <file> 20 22 9 13 7 11</file>
-                </tool>
-            </inputs>
         </file>
         <file>
             <name>$PROJ_DIR$\main.c</name>
@@ -66,22 +55,60 @@
                     <file> 22</file>
                 </tool>
                 <tool>
-                    <name>__cstat</name>
-                    <file> 6</file>
+                    <name>BICOMP</name>
+                    <file> 23</file>
                 </tool>
                 <tool>
-                    <name>BICOMP</name>
-                    <file> 1</file>
+                    <name>__cstat</name>
+                    <file> 3</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 12 25 10 24 3 18 19 14 16 21 8 15 2 23 4 27</file>
+                    <file> 29 5 26 15 25 7 10 21 19 18 13 1 17 0 24 6 27</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 19 25 4 2 23 27 10 24 3 14 12 8 18 16 21 15</file>
+                    <file> 27 25 21 26 24 15 7 5 6 0 19 29 1 10 18 13 17</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Debug\Exe\stm32_course.out</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 8</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 12 30 22 9 2 11 16</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\clicker.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 30</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 31</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 29 5 26 15 25 7 10 21 19 18 13 1 17 0 24 6 27</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 15 26 21 6 7 5 25 24 27 0 19 29 1 10 18 13 17</file>
                 </tool>
             </inputs>
         </file>
