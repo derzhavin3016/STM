@@ -88086,283 +88086,87 @@
     "scope": null
   },
   {
-    "ID": "c:@F@delay",
+    "ID": "c:@F@noise_cl",
     "What": "Function",
-    "defdec": "Def",
-    "display": "void delay(void)",
+    "defdec": "Dec",
+    "display": "void noise_cl(void)",
     "location": {
       "column": "6",
-      "line": "3",
-      "path": "D:\\!WORK\\STM\\FST\\clicker.c"
+      "line": "20",
+      "path": "D:\\!WORK\\STM\\FST\\clicker.h"
     },
-    "name": "delay",
-    "origin": "project_file",
+    "name": "noise_cl",
+    "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:clicker.c@54@F@delay@i",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "i",
-    "location": {
-      "column": "12",
-      "line": "5",
-      "path": "D:\\!WORK\\STM\\FST\\clicker.c"
-    },
-    "name": "i",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@delay10",
+    "ID": "c:@F@noise_cl",
     "What": "Function",
-    "defdec": "Def",
-    "display": "void delay10(void)",
+    "defdec": "Dec",
+    "display": "void noise_cl(void)",
     "location": {
       "column": "6",
-      "line": "8",
-      "path": "D:\\!WORK\\STM\\FST\\clicker.c"
+      "line": "20",
+      "path": "D:\\!WORK\\STM\\FST\\clicker.h"
     },
-    "name": "delay10",
-    "origin": "project_file",
+    "name": "noise_cl",
+    "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:clicker.c@121@F@delay10@i",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "i",
-    "location": {
-      "column": "12",
-      "line": "10",
-      "path": "D:\\!WORK\\STM\\FST\\clicker.c"
-    },
-    "name": "i",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@gpio_config",
+    "ID": "c:@F@no_noise_cl",
     "What": "Function",
-    "defdec": "Def",
-    "display": "void gpio_config(void)",
+    "defdec": "Dec",
+    "display": "void no_noise_cl(void)",
     "location": {
       "column": "6",
-      "line": "13",
-      "path": "D:\\!WORK\\STM\\FST\\clicker.c"
+      "line": "22",
+      "path": "D:\\!WORK\\STM\\FST\\clicker.h"
     },
-    "name": "gpio_config",
-    "origin": "project_file",
+    "name": "no_noise_cl",
+    "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:@F@show_digit",
+    "ID": "c:@F@no_noise_cl",
     "What": "Function",
-    "defdec": "Def",
-    "display": "uint16_t show_digit(uint32_t)",
-    "location": {
-      "column": "10",
-      "line": "37",
-      "path": "D:\\!WORK\\STM\\FST\\clicker.c"
-    },
-    "name": "show_digit",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:clicker.c@1351@F@show_digit@s",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "s",
-    "location": {
-      "column": "12",
-      "line": "39",
-      "path": "D:\\!WORK\\STM\\FST\\clicker.c"
-    },
-    "name": "s",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@get_hell_sym",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "uint16_t get_hell_sym(uint8_t)",
-    "location": {
-      "column": "10",
-      "line": "77",
-      "path": "D:\\!WORK\\STM\\FST\\clicker.c"
-    },
-    "name": "get_hell_sym",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:clicker.c@2262@F@get_hell_sym@s",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "s",
-    "location": {
-      "column": "12",
-      "line": "79",
-      "path": "D:\\!WORK\\STM\\FST\\clicker.c"
-    },
-    "name": "s",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@show_hell",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void show_hell(uint32_t)",
+    "defdec": "Dec",
+    "display": "void no_noise_cl(void)",
     "location": {
       "column": "6",
-      "line": "119",
-      "path": "D:\\!WORK\\STM\\FST\\clicker.c"
+      "line": "22",
+      "path": "D:\\!WORK\\STM\\FST\\clicker.h"
     },
-    "name": "show_hell",
-    "origin": "project_file",
+    "name": "no_noise_cl",
+    "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:clicker.c@3210@F@show_hell@string",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "string",
-    "location": {
-      "column": "11",
-      "line": "121",
-      "path": "D:\\!WORK\\STM\\FST\\clicker.c"
-    },
-    "name": "string",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:clicker.c@3251@F@show_hell@size",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "size",
-    "location": {
-      "column": "12",
-      "line": "122",
-      "path": "D:\\!WORK\\STM\\FST\\clicker.c"
-    },
-    "name": "size",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:clicker.c@3305@F@show_hell@pos",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "pos",
-    "location": {
-      "column": "12",
-      "line": "123",
-      "path": "D:\\!WORK\\STM\\FST\\clicker.c"
-    },
-    "name": "pos",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:clicker.c@3373@F@show_hell@i",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "i",
-    "location": {
-      "column": "14",
-      "line": "127",
-      "path": "D:\\!WORK\\STM\\FST\\clicker.c"
-    },
-    "name": "i",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:clicker.c@3394@F@show_hell@dot_flag",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "dot_flag",
-    "location": {
-      "column": "12",
-      "line": "128",
-      "path": "D:\\!WORK\\STM\\FST\\clicker.c"
-    },
-    "name": "dot_flag",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:clicker.c@3424@F@show_hell@sym_pos",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "sym_pos",
-    "location": {
-      "column": "11",
-      "line": "130",
-      "path": "D:\\!WORK\\STM\\FST\\clicker.c"
-    },
-    "name": "sym_pos",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:clicker.c@3650@F@show_hell@pos_mask",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "pos_mask",
-    "location": {
-      "column": "12",
-      "line": "140",
-      "path": "D:\\!WORK\\STM\\FST\\clicker.c"
-    },
-    "name": "pos_mask",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@show_number",
+    "ID": "c:@F@show_word",
     "What": "Function",
-    "defdec": "Def",
-    "display": "void show_number(uint32_t)",
+    "defdec": "Dec",
+    "display": "void show_word(void)",
     "location": {
       "column": "6",
-      "line": "157",
-      "path": "D:\\!WORK\\STM\\FST\\clicker.c"
+      "line": "24",
+      "path": "D:\\!WORK\\STM\\FST\\clicker.h"
     },
-    "name": "show_number",
-    "origin": "project_file",
+    "name": "show_word",
+    "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:clicker.c@4086@F@show_number@res",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "res",
+    "ID": "c:@F@show_word",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void show_word(void)",
     "location": {
-      "column": "12",
-      "line": "159",
-      "path": "D:\\!WORK\\STM\\FST\\clicker.c"
+      "column": "6",
+      "line": "24",
+      "path": "D:\\!WORK\\STM\\FST\\clicker.h"
     },
-    "name": "res",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:clicker.c@4309@F@show_number@i",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "i",
-    "location": {
-      "column": "14",
-      "line": "167",
-      "path": "D:\\!WORK\\STM\\FST\\clicker.c"
-    },
-    "name": "i",
-    "origin": "project_file",
+    "name": "show_word",
+    "origin": "user_include",
     "scope": null
   },
   {
@@ -90329,6 +90133,412 @@
     },
     "name": "LL_APB1_GRP2_ReleaseReset",
     "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@delay",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void delay(void)",
+    "location": {
+      "column": "6",
+      "line": "3",
+      "path": "D:\\!WORK\\STM\\FST\\clicker.c"
+    },
+    "name": "delay",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:clicker.c@54@F@delay@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "12",
+      "line": "5",
+      "path": "D:\\!WORK\\STM\\FST\\clicker.c"
+    },
+    "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@delay10",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void delay10(void)",
+    "location": {
+      "column": "6",
+      "line": "8",
+      "path": "D:\\!WORK\\STM\\FST\\clicker.c"
+    },
+    "name": "delay10",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:clicker.c@121@F@delay10@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "12",
+      "line": "10",
+      "path": "D:\\!WORK\\STM\\FST\\clicker.c"
+    },
+    "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@gpio_config",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void gpio_config(void)",
+    "location": {
+      "column": "6",
+      "line": "13",
+      "path": "D:\\!WORK\\STM\\FST\\clicker.c"
+    },
+    "name": "gpio_config",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@show_digit",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "uint16_t show_digit(uint32_t)",
+    "location": {
+      "column": "10",
+      "line": "34",
+      "path": "D:\\!WORK\\STM\\FST\\clicker.c"
+    },
+    "name": "show_digit",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:clicker.c@1217@F@show_digit@s",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "s",
+    "location": {
+      "column": "12",
+      "line": "36",
+      "path": "D:\\!WORK\\STM\\FST\\clicker.c"
+    },
+    "name": "s",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@get_hell_sym",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "uint16_t get_hell_sym(uint8_t)",
+    "location": {
+      "column": "10",
+      "line": "74",
+      "path": "D:\\!WORK\\STM\\FST\\clicker.c"
+    },
+    "name": "get_hell_sym",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:clicker.c@2128@F@get_hell_sym@s",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "s",
+    "location": {
+      "column": "12",
+      "line": "76",
+      "path": "D:\\!WORK\\STM\\FST\\clicker.c"
+    },
+    "name": "s",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@show_hell",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void show_hell(uint32_t)",
+    "location": {
+      "column": "6",
+      "line": "116",
+      "path": "D:\\!WORK\\STM\\FST\\clicker.c"
+    },
+    "name": "show_hell",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:clicker.c@3076@F@show_hell@string",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "string",
+    "location": {
+      "column": "11",
+      "line": "118",
+      "path": "D:\\!WORK\\STM\\FST\\clicker.c"
+    },
+    "name": "string",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:clicker.c@3117@F@show_hell@size",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "size",
+    "location": {
+      "column": "12",
+      "line": "119",
+      "path": "D:\\!WORK\\STM\\FST\\clicker.c"
+    },
+    "name": "size",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:clicker.c@3171@F@show_hell@pos",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "pos",
+    "location": {
+      "column": "12",
+      "line": "120",
+      "path": "D:\\!WORK\\STM\\FST\\clicker.c"
+    },
+    "name": "pos",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:clicker.c@3239@F@show_hell@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "14",
+      "line": "124",
+      "path": "D:\\!WORK\\STM\\FST\\clicker.c"
+    },
+    "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:clicker.c@3260@F@show_hell@dot_flag",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "dot_flag",
+    "location": {
+      "column": "12",
+      "line": "125",
+      "path": "D:\\!WORK\\STM\\FST\\clicker.c"
+    },
+    "name": "dot_flag",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:clicker.c@3290@F@show_hell@sym_pos",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "sym_pos",
+    "location": {
+      "column": "11",
+      "line": "127",
+      "path": "D:\\!WORK\\STM\\FST\\clicker.c"
+    },
+    "name": "sym_pos",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:clicker.c@3516@F@show_hell@pos_mask",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "pos_mask",
+    "location": {
+      "column": "12",
+      "line": "137",
+      "path": "D:\\!WORK\\STM\\FST\\clicker.c"
+    },
+    "name": "pos_mask",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@show_number",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void show_number(uint32_t)",
+    "location": {
+      "column": "6",
+      "line": "154",
+      "path": "D:\\!WORK\\STM\\FST\\clicker.c"
+    },
+    "name": "show_number",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:clicker.c@3952@F@show_number@res",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "res",
+    "location": {
+      "column": "12",
+      "line": "156",
+      "path": "D:\\!WORK\\STM\\FST\\clicker.c"
+    },
+    "name": "res",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:clicker.c@4175@F@show_number@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "14",
+      "line": "164",
+      "path": "D:\\!WORK\\STM\\FST\\clicker.c"
+    },
+    "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@no_noise_cl",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void no_noise_cl(void)",
+    "location": {
+      "column": "6",
+      "line": "171",
+      "path": "D:\\!WORK\\STM\\FST\\clicker.c"
+    },
+    "name": "no_noise_cl",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:clicker.c@4301@F@no_noise_cl@counter",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "counter",
+    "location": {
+      "column": "19",
+      "line": "173",
+      "path": "D:\\!WORK\\STM\\FST\\clicker.c"
+    },
+    "name": "counter",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:clicker.c@4301@F@no_noise_cl@is_pressed",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "is_pressed",
+    "location": {
+      "column": "32",
+      "line": "173",
+      "path": "D:\\!WORK\\STM\\FST\\clicker.c"
+    },
+    "name": "is_pressed",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:clicker.c@4301@F@no_noise_cl@n",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "n",
+    "location": {
+      "column": "48",
+      "line": "173",
+      "path": "D:\\!WORK\\STM\\FST\\clicker.c"
+    },
+    "name": "n",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@noise_cl",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void noise_cl(void)",
+    "location": {
+      "column": "6",
+      "line": "199",
+      "path": "D:\\!WORK\\STM\\FST\\clicker.c"
+    },
+    "name": "noise_cl",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:clicker.c@4775@F@noise_cl@n",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "n",
+    "location": {
+      "column": "19",
+      "line": "201",
+      "path": "D:\\!WORK\\STM\\FST\\clicker.c"
+    },
+    "name": "n",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@show_word",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void show_word(void)",
+    "location": {
+      "column": "6",
+      "line": "212",
+      "path": "D:\\!WORK\\STM\\FST\\clicker.c"
+    },
+    "name": "show_word",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:clicker.c@4978@F@show_word@n",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "n",
+    "location": {
+      "column": "19",
+      "line": "214",
+      "path": "D:\\!WORK\\STM\\FST\\clicker.c"
+    },
+    "name": "n",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:clicker.c@5013@F@show_word@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "12",
+      "line": "216",
+      "path": "D:\\!WORK\\STM\\FST\\clicker.c"
+    },
+    "name": "i",
+    "origin": "project_file",
     "scope": null
   },
   {
@@ -94534,16 +94744,30 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@34@macro@NO_NOISE",
+    "ID": "c:main.c@32@macro@NO_NOISE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "NO_NOISE",
     "location": {
       "column": "9",
-      "line": "4",
+      "line": "3",
       "path": "D:\\!WORK\\STM\\FST\\main.c"
     },
     "name": "NO_NOISE",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@52@macro@CLICKER",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "CLICKER",
+    "location": {
+      "column": "9",
+      "line": "5",
+      "path": "D:\\!WORK\\STM\\FST\\main.c"
+    },
+    "name": "CLICKER",
     "origin": "project_file",
     "scope": null
   },
@@ -94554,80 +94778,10 @@
     "display": "int main(void)",
     "location": {
       "column": "5",
-      "line": "8",
+      "line": "7",
       "path": "D:\\!WORK\\STM\\FST\\main.c"
     },
     "name": "main",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@109@F@main@counter",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "counter",
-    "location": {
-      "column": "12",
-      "line": "11",
-      "path": "D:\\!WORK\\STM\\FST\\main.c"
-    },
-    "name": "counter",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@109@F@main@is_pressed",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "is_pressed",
-    "location": {
-      "column": "25",
-      "line": "11",
-      "path": "D:\\!WORK\\STM\\FST\\main.c"
-    },
-    "name": "is_pressed",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@109@F@main@is_on",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "is_on",
-    "location": {
-      "column": "41",
-      "line": "11",
-      "path": "D:\\!WORK\\STM\\FST\\main.c"
-    },
-    "name": "is_on",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@161@F@main@n",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "n",
-    "location": {
-      "column": "12",
-      "line": "12",
-      "path": "D:\\!WORK\\STM\\FST\\main.c"
-    },
-    "name": "n",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.c@1563@F@main@i",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "i",
-    "location": {
-      "column": "14",
-      "line": "77",
-      "path": "D:\\!WORK\\STM\\FST\\main.c"
-    },
-    "name": "i",
     "origin": "project_file",
     "scope": null
   }
